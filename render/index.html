@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>env.render</title>
+    <style>
+        html, body, #wrapper {height:100%;width: 100%;margin: 0;padding: 0;border: 0;}
+        #wrapper td {vertical-align: middle; text-align: center;}
+        .github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <p style="text-align:center; font-size:40px; font-family:'Raleway', sans-serif;">env.<b>render</b></p>
+    <table id="wrapper">
+        <tr>
+            <td><img src="{{ url_for('render_feed') }}"></td>
+        </tr>
+    </table>
+  </body>
+</html>
